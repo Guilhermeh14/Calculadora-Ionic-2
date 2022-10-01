@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="limpar()">
+        <ion-icon name="trash-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Calculadora</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input [(ngModel)]="valor1" placeholder="valor1"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input [(ngModel)]="valor2" placeholder="valor2"></ion-input>
+  </ion-item>
+  
+
+  <ion-button (click)="AlertSoma()">+</ion-button>
+  <ion-button (click)="AlertSubtracao()">-</ion-button>
+  <ion-button (click)="AlertMultiplicacao()">*</ion-button>
+  <ion-button (click)="AlertDivisao()">/</ion-button>
+  <ion-button (click)="AlertMaior()">Maior</ion-button>
+  <ion-button (click)="AlertMenor()">Menor</ion-button>
+
+  <ion-item>
+    <ion-label>Resultado:</ion-label>
+    <ion-input [(ngModel)]="resultado" readonly></ion-input>
+  </ion-item>
+
+<ion-item>
+  <ion-label>Conta:</ion-label>
+  <ion-input [(ngModel)]="conta" readonly></ion-input>
+</ion-item>
+
+
+</ion-content>

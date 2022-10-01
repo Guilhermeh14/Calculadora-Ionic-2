@@ -1,0 +1,7 @@
+{
+  "name": "Calculadoraprova",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
