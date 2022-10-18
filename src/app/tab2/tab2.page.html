@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" color="medium">
+<ion-content [fullscreen]="true" color="large">
   <ion-card>
     <ion-item>
       <ion-label position="stacked">Operação</ion-label>
@@ -91,7 +91,7 @@
           <ion-button (click)="adicionarValor('.')" expand="full" color="light">,</ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button expand="full">=</ion-button>
+          <ion-button (click)= "calcularOperacao()" expand="full">=</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
