@@ -4,6 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content [fullscreen]="true" color="large">
   <ion-card>
     <ion-item>
@@ -19,6 +20,29 @@
   <ion-card>
     <ion-grid>
       <ion-row>
+
+        <!-- Abri Ms -->
+        <ion-col size="2">
+          <ion-button expand="full" color="medium">MC</ion-button>
+        </ion-col>
+        <ion-col size="2">
+          <ion-button expand="full" color="medium">MR</ion-button>
+        </ion-col>
+        <ion-col size="2">
+          <ion-button  expand="full" color="medium">M+</ion-button>
+        </ion-col>
+        <ion-col size="2">
+          <ion-button  expand="full" color="medium">M-</ion-button>
+        </ion-col>
+        <ion-col size="2">
+          <ion-button (click)="adicionarMemoria()" expand="full" color="medium">MS</ion-button>
+        </ion-col>
+        <ion-col size="2">
+          <ion-button expand="full" color="medium">M</ion-button>
+        </ion-col>
+        <!-- Fecha Ms -->
+        
+
         <ion-col size="3">
           <ion-button expand="full" color="medium">%</ion-button>
         </ion-col>
@@ -95,5 +119,5 @@
         </ion-col>
       </ion-row>
     </ion-grid>
-  </ion-card>
+  </ion-card> 
 </ion-content>
